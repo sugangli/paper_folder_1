@@ -1,0 +1,96 @@
+\documentclass[10pt]{article}
+\usepackage{rotate,page,epsf,epsfig,url,subfigure,wrapfig,algorithm2e}
+\usepackage[sc]{mathpazo}
+\usepackage{amsfonts,amssymb,graphicx}
+\usepackage{comment}
+
+
+
+% Using 10.5 fonts over 11pt skips. (Actual lines/inch is achieved also with
+% the linespread above
+%\renewcommand{\normalsize}{\fontsize{10.5pt}{11pt}\selectfont}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1in}{1in}{1in}{1in}%
+%{0in}{0in}{0in}{0.05in}
+%\setmarginsrb{0.9in}{0.8in}{.9in}{.9in}%
+{0in}{0in}{0in}{0.0in}
+
+\linespread{1.03}% use this to control line spacing
+% changed from 1.1
+
+
+%%\textheight 233truemm \textwidth  172truemm
+%%\linespread{1.1} %% use this to control line spacing
+
+
+% removed times -- since apparently not allowed by NSF
+%\newcounter{definition}
+%\newtheorem{theorem}{Theorem}
+%\newtheorem{axiom}[theorem]{Axiom}
+%\newtheorem{case}[theorem]{Case}
+%\newtheorem{claim}[theorem]{Claim}
+%\newtheorem{conclusion}[theorem]{Conclusion}
+%\newtheorem{conjecture}[theorem]{Conjecture}
+%\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+%\newtheorem{lemma}{Lemma}
+%\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{remark}[theorem]{Remark}
+%\def\proof{\noindent\hspace{2em}{\it Proof: }}
+
+%\newcommand{\Geotags}{GLUE}
+
+
+
+\newenvironment{itemizer}{\begin{itemize}\setlength{\parsep}{0cm}\setlength{\itemsep}{-.3em}}{\end{itemize}}
+\newenvironment{enumerator}{\begin{enumerate}\setlength{\itemsep}{-0.15cm}}{\end{enumerate}}
+
+
+\begin{document}
+
+\setcounter{page}{1}
+\def\mysection{A}
+\nsffoot \nsftitle{Project Summary}
+
+\begin{center}
+\vspace{-6mm}
+{\bf CPS: Synergy: To Build a Smart Campus for People with Deaf Impairment}
+\end{center}
+\vspace*{-2mm}
+\input{campus15_summary}
+\vspace{-6pt}
+%\begin{center}
+%\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%Yanyong Zhang, Richard Martin, Wade Trappe, Richard Howard & {\bf WINLAB, Rutgers
+%University}\\
+%\end{tabular*}
+%\end{center}
+\vspace*{.1in}
+\pagebreak
+
+
+\setcounter{page}{1}
+\def\mysection{C}
+\nsffoot \nsftitle{PROJECT DESCRIPTION}
+\def\thesection{\arabic{section}}
+\def\thesubsection{\arabic{section}.\arabic{subsection}}
+\def\thesubsubsection{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+
+\input{campus15_intro}
+
+
+%\newpage
+%\setcounter{page}{1}
+%\def\mysection{D}
+%\nsffoot \nsftitle{COLLABORATION PLAN}
+%\input{TO13_collaboration}
+
+\newpage
+\setcounter{page}{1}
+\def\mysection{E}
+\bibliographystyle{plain}
+\bibliography{}
+\end{document}
